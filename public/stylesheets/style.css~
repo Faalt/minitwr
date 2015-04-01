@@ -1,0 +1,33 @@
+body {
+  padding-left: 600px;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  padding-left: 110px;
+  font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #486499;
+}
+
+h2 {
+  padding-bottom: 150px;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #486499;
+}
+
+h3 {
+  padding-left: 125px;
+}
+
+form {
+  padding-left: 50px;
+}
+
+input {
+  display: block;
+  margin-left: 30px;
+}
