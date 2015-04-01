@@ -1,5 +1,5 @@
 body {
-  padding-left: 600px;
+  text-align: center;
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,26 +8,31 @@ a {
 }
 
 h1 {
-  padding-left: 110px;
+  text-align: center;
   font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #486499;
 }
 
 h2 {
-  padding-bottom: 150px;
+  text-align: center;
   font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #486499;
 }
 
 h3 {
-  padding-left: 140px;
+  text-align: center;
 }
 
 form {
-  padding-left: 50px;
+  text-align: center;
 }
 
-input {
-  display: block;
-  margin-left: 30px;
+input[type=submit]{
+    display: inline-block;
+    text-align:center;
+}
+
+ul li {
+  text-align: center;
+  display: inline;
 }

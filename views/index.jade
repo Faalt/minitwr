@@ -3,8 +3,11 @@ extends layout
 block content
 	h1= title
 	h2 Venez participer à un flot d'inepties sans queue ni bec!  
+	br
+	br
 	h3 Time to feed.
 	form
-		input(type='text', rows='4')
+		textarea#twatt(name='twatt', rows='4',cols='40')
+		br
 		input(type='submit', value='click to submit')
 		
