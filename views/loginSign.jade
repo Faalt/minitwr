@@ -1,0 +1,28 @@
+extends layoutLogin
+
+block content
+  div
+    a(href='/')
+      img(src='http://image.noelshack.com/fichiers/2015/17/1429701912-logo.png', alt='logo' , style='weight:150px ; height:75px')    
+  h1= title
+  br
+  br
+  form#myForm
+    label.form_col(for='login') Pseudo :
+    input#login(name='login', type='text')
+    span.tooltip Le pseudo ne peut pas faire moins de 4 caracteres
+    br
+    br
+    label.form_col(for='pwd1') Mot de passe :
+    input#pwd1(name='pwd1', type='password')
+    span.tooltip Le mot de passe ne doit pas faire moins de 6 caracteres
+    br
+    br
+    label.form_col(for='pwd2') Mot de passe (confirmation) :
+    input#pwd2(name='pwd2', type='password')
+    span.tooltip Le mot de passe de confirmation doit etre identique a celui d origine
+    br
+    br
+    span.form_col
+    input(type='submit', value="M'inscrire")
+    input(type='reset', value='Réinitialiser le formulaire')  

@@ -1,13 +1,29 @@
 extends layout
 
+
 block content
-	h1= title
-	h2 Venez participer à un flot d'inepties sans queue ni bec!  
-	br
-	br
-	h3 Time to feed.
-	form
-		textarea#twatt(name='twatt', rows='4',cols='40')
-		br
-		input(type='submit', value='click to submit')
-		
+  img(src='http://image.noelshack.com/fichiers/2015/17/1429701912-logo.png', alt='logo')
+  h2 Venez participer à un flot d'inepties sans queue ni bec!  
+  br
+  br
+  h3 Time to feed.
+  form
+    input(type='button', value='Login/SignUp', onclick="location='loginSign.jade'")
+  br
+  form(action='/', method='POST')
+    textarea(name='twatt', rows='4',cols='40')
+    br
+    input(type='submit', value='Dans la tombe!', content="Sends")
+    br
+    br
+  div(class='timeline')
+    br    
+    ul
+      - each twatt in twatts
+        li= twatt
+        br
+        br
+        hr
+  
+        
+
