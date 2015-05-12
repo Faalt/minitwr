@@ -1,6 +1,8 @@
 body {
   text-align: center;
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('http://image.noelshack.com/fichiers/2015/19/1430756872-background.png') no-repeat fixed;
+  margin: 0 0 0 0;
 }
 
 a {
@@ -27,19 +29,55 @@ h3 {
   text-align: center;
 }
 
-
+h4 {
+	font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
 
 form {
   text-align: center;
 }
 
+
 input[type=submit]{
-    display: inline-block;
-    text-align:center;
+	color: #FFF;
+	background-color: #496599;
+	border-color: #2E6DA4;
+	display: inline-block;
+	text-align:right;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
 }
 
 input[type=button] {
+	color: #FFF;
+	background-color: #496599;
+	border-color: #2E6DA4;
+	display: inline-block;
 	text-align:right;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-right: 5px;
 }
 
 
@@ -48,7 +86,38 @@ ul li {
   display: inline;
 }
 
+.timeline-bloc {
+	text-align: center;
+	margin: 0 auto;
+	background-color: #f7fafc;
+	box-shadow: 0px 0px 5px #000;
+	width: 900px;
+	border-radius: 10px;
+	padding-bottom: 40px;
+	padding-top: 10px;
+}
+
 .timeline {
-  border: 3px solid #8ebbeb;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #8ebbeb;
   border-radius: 30px;
+  width: 800px;
+  padding-right: 30px;
+}
+
+.twatt {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid #496599;
+  margin-bottom: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.bottom {
+  height: 509px;
+  background-image: url('http://image.noelshack.com/fichiers/2015/20/1431451618-nuage.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

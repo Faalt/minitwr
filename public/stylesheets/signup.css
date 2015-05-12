@@ -1,7 +1,9 @@
 body 
 {
     padding-top: 50px;
-	background-image: url('fond.png');
+	/*background-image: url('http://image.noelshack.com/fichiers/2015/19/1430757028-background2.png');
+    background-repeat: no-repeat;*/
+    margin: 0 0 0 0;
 }
 
 .flottant
@@ -13,6 +15,11 @@ h1 {
   text-align: center;
   font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #486499;
+}
+
+h2 {
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 img {
@@ -94,6 +101,31 @@ input:focus
     margin-left: 50px;
     padding: 2px 4px;
     border: 1px solid #555;
-    background-color: #CCC;
     border-radius: 4px;
+}
+
+#myForm2
+{
+	display: inline-block;
+    vertical-align: top;
+	clear: both;
+	position: absolute;
+	left: 30%;
+	top: 60%;
+    width: 500px;
+    background-color: #496599;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.bottom {
+  margin-top:203px;
+  bottom: 0;
+  height: 509px;
+  background-image: url('http://image.noelshack.com/fichiers/2015/20/1431451618-nuage.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
