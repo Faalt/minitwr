@@ -1,29 +1,42 @@
 extends layout
 
-
+/*http://image.noelshack.com/fichiers/2015/17/1429701912-*/
 block content
-  img(src='http://image.noelshack.com/fichiers/2015/17/1429701912-logo.png', alt='logo')
+  a(href='/')
+    img(src='http://image.noelshack.com/fichiers/2015/17/1429701912-logo.png', alt='logo' , style='weight:400px ; height:200px')
   h2 Venez participer à un flot d'inepties sans queue ni bec!  
   br
   br
-  h3 Time to feed.
-  form
-    input(type='button', value='Login/SignUp', onclick="location='loginSign.jade'")
   br
-  form(action='/', method='POST')
-    textarea(name='twatt', rows='4',cols='40')
+  div(class='timeline-bloc', width)
+    if user!=null
+      h3 Time to feed.
+    else
+      h3 Time to feed.
+      form
+        input(type='button', value='Login/SignUp', onclick="location='loginSign.jade'")  
     br
-    input(type='submit', value='Dans la tombe!', content="Sends")
-    br
-    br
-  div(class='timeline')
-    br    
-    ul
-      - each twatt in twatts
-        li= twatt
-        br
-        br
-        hr
+    form(role='form', name='form', action='/twatt', method='post', enctype='plain')
+      input(type='text', name='username', placeholder="     Flemme de s'inscrire?")
+      br
+      textarea(name='twatt', rows='4',cols='40')
+      br
+      button(type='submit', value='Dans la tombe!') Dans la tombe!
+      br
+      br
+    div(class='timeline' , width:60%)
+      br    
+      ul
+        - each twatt in twatts
+          div(class='twatt')
+            if (twatt.nickname==[])
+              h4 Anonymous
+            else
+              h4 #{twatt.nickname}
+            li= twatt.twatt
+            br
+            br
+  div(class='bottom')
   
         
 

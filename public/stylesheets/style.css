@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url('http://image.noelshack.com/fichiers/2015/19/1430756872-background.png') no-repeat fixed;
+  background: url('http://image.noelshack.com/fichiers/2015/19/1430756872-background.png') no-repeat fixed transparent;
   margin: 0 0 0 0;
 }
 
@@ -39,7 +39,7 @@ form {
 }
 
 
-input[type=submit]{
+input[type=button]{
 	color: #FFF;
 	background-color: #496599;
 	border-color: #2E6DA4;
@@ -59,7 +59,7 @@ input[type=submit]{
 	border-radius: 4px;
 }
 
-input[type=button] {
+button[type=submit] {
 	color: #FFF;
 	background-color: #496599;
 	border-color: #2E6DA4;
